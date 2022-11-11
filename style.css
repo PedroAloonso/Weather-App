@@ -1,0 +1,173 @@
+:root {
+    --color1: #0D1B2A;
+    --color2: #1B263B;
+    --color3: #415A77;
+    --color4: #778DA9;
+    --color5: #E0E1DD;
+    
+}
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--color1);
+}
+
+#cityInput {
+    min-width: 200px;
+    width: 50vw;
+    height: 40px;
+    
+    margin: 20px;
+    border: 0;
+    border-radius: 10px;
+    
+    background-color: var(--color5);
+
+    font-size: 20px;
+    color: var(--color2);
+}
+
+#cityInput:focus {
+    outline: var(--color2) solid 3px;
+}
+
+#btnCityInput {
+    width: 50px;
+    height: 45px;
+    
+    margin: 20px;
+    border: 0;
+    border-radius: 10px;
+    
+    background-color: var(--color2);
+}
+
+#btnCityInput:hover {
+    background-color: var(--color3);
+}
+
+#btnCityInput:active {
+    background-color: var(--color4);
+}
+
+/* Main */
+
+main {
+    height: 100%;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./images/background.png' );
+    
+    text-align: center;
+    color: var(--color1);
+    
+}
+
+.external-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(rgba(13, 27, 42, 0.568),rgba(0, 0, 0, 0.26));
+}
+
+/* Principal info */
+
+.main-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    width: 400px;
+
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgba(65, 90, 119, 0.295);
+}
+
+.main-info div {
+    width: 350px;
+    font-size: 24px;  
+}
+
+.main-info div * {
+    margin: 8px;
+}
+
+#date {
+    font-size: 24px;
+}
+
+.main-info img {
+    margin: 8px;
+}
+
+/* Secundary info */
+
+.side-info {
+    min-width: 150px;
+    max-width: 900px;
+    width: fit-content;
+    height: 185px;
+    margin: 25px;
+
+    background-color: rgba(65, 90, 119, 0.295);
+    border-radius: 10px;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    
+    /*Custom scrollbar in firefox */
+    scrollbar-color: rgba(224, 225, 221, 0.624) rgba(27, 38, 59, 0.507);
+    scrollbar-width: thin;
+}
+
+/*For custom scrollbar in blink and webkit based browsers*/
+.side-info::-webkit-scrollbar-track {
+    background-color: rgba(27, 38, 59, 0.507);
+    border-radius: 10px;
+}
+.side-info::-webkit-scrollbar {
+    background-color: rgba(27, 38, 59, 0.507);
+    border-radius: 10px;
+    height: 10px;
+}
+
+.side-info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(224, 225, 221, 0.624);
+}
+
+.side-info-item {
+    display: inline-block;
+    margin: 20px;
+
+    font-size: 16px;
+}
+
+.side-info-item * {
+    margin: 2px;
+}
+
+/* Footer */
